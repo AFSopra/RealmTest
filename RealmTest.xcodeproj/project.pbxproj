@@ -16,6 +16,7 @@
 		675E3FA42559ABA7008DDDAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675E3FA32559ABA7008DDDAB /* SceneDelegate.swift */; };
 		675E3FAB2559ABA8008DDDAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 675E3FAA2559ABA8008DDDAB /* Assets.xcassets */; };
 		675E3FAE2559ABA8008DDDAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675E3FAC2559ABA8008DDDAB /* LaunchScreen.storyboard */; };
+		676F42C625628A3B00243508 /* RealmTest.plist in Resources */ = {isa = PBXBuildFile; fileRef = 676F42C525628A3B00243508 /* RealmTest.plist */; };
 		679686B6255A8B3E00ACAE94 /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679686B5255A8B3E00ACAE94 /* Movies.swift */; };
 		67A848A3255AA8C200D827DA /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A848A1255AA8C200D827DA /* AddTaskViewController.swift */; };
 		67A848A4255AA8C200D827DA /* AddTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67A848A2255AA8C200D827DA /* AddTaskViewController.xib */; };
@@ -45,6 +46,7 @@
 		675E3FAA2559ABA8008DDDAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		675E3FAD2559ABA8008DDDAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		675E3FAF2559ABA8008DDDAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		676F42C525628A3B00243508 /* RealmTest.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RealmTest.plist; sourceTree = "<group>"; };
 		679686B5255A8B3E00ACAE94 /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		67A848A1255AA8C200D827DA /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		67A848A2255AA8C200D827DA /* AddTaskViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTaskViewController.xib; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				675E3FAA2559ABA8008DDDAB /* Assets.xcassets */,
 				675E3FAC2559ABA8008DDDAB /* LaunchScreen.storyboard */,
 				67D7FD21255C1F3300F2B3C5 /* RealmTestUtils.swift */,
+				676F42C525628A3B00243508 /* RealmTest.plist */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 			files = (
 				6723E364255C3CD00045FCBF /* CustomCell.xib in Resources */,
 				675E3FAE2559ABA8008DDDAB /* LaunchScreen.storyboard in Resources */,
+				676F42C625628A3B00243508 /* RealmTest.plist in Resources */,
 				67A848A4255AA8C200D827DA /* AddTaskViewController.xib in Resources */,
 				67A848D5255AB3BE00D827DA /* DetailViewController.xib in Resources */,
 				675E3FAB2559ABA8008DDDAB /* Assets.xcassets in Resources */,

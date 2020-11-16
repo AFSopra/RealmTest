@@ -8,26 +8,36 @@
 import UIKit
 
 struct RealmTestUtils {
-    static let apiKey = "?api_key=067f5f0549fc4dee8c6e3be847418daa"
+    public static var apiKey: String {
+        // 1
+        guard let filePath = Bundle.main.path(forResource: "RealmTest", ofType: "plist") else {
+            fatalError("Couldn't find file 'RealmTest.plist'.")
+        }
+        // 2
+        let plist = NSDictionary(contentsOfFile: filePath)
+        guard let value = plist?.object(forKey: "API_KEY") as? String else {
+            fatalError("Couldn't find key 'API_KEY' in 'RealmTest.plist'.")
+        }
+        return value
+    }
 
-    struct URL {
+    enum URL {
         static let main = "https://api.themoviedb.org/"
     }
 
-    struct Endpoints {
+    enum Endpoints {
         static let urlPopularMoviesList = "3/movie/popular"
     }
 }
 
 @IBDesignable class CircleDrawView: UIView {
-
-    @IBInspectable var borderColor: UIColor = UIColor.black
-    @IBInspectable var borderSize: CGFloat = CGFloat(4)
+    @IBInspectable var borderColor = UIColor.black
+    @IBInspectable var borderSize = CGFloat(4)
 
     override func draw(_ rec: CGRect) {
         layer.borderColor = borderColor.cgColor
         layer.borderWidth = borderSize
-        layer.cornerRadius = self.frame.height / 2
+        layer.cornerRadius = frame.height / 2
     }
 }
 
@@ -36,8 +46,6 @@ public class Utils {
         let minimumRandom: Int = 99999
         let maximumRandom: Int = 9999999999
 
-        return Int.random(in: minimumRandom...maximumRandom)
+        return Int.random(in: minimumRandom ... maximumRandom)
     }
 }
-
-
