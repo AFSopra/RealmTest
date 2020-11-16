@@ -9,11 +9,10 @@ import UIKit
 
 struct RealmTestUtils {
     public static var apiKey: String {
-        // 1
         guard let filePath = Bundle.main.path(forResource: "RealmTest", ofType: "plist") else {
             fatalError("Couldn't find file 'RealmTest.plist'.")
         }
-        // 2
+
         let plist = NSDictionary(contentsOfFile: filePath)
         guard let value = plist?.object(forKey: "API_KEY") as? String else {
             fatalError("Couldn't find key 'API_KEY' in 'RealmTest.plist'.")
